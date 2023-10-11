@@ -1,0 +1,101 @@
+
+
+
+update client set CRNumber ='MKTCA-SD00234' where crnumber ='MKTCT00234'
+
+exec getallavailableClientrequests 110
+
+exec getallCompleteClientrequests 110
+
+MariaDelcid         	Maria12
+
+MarketersScheduleForPatientRequest
+
+select * from clientrequest where clientrequestid in (1440,
+1400,
+1442)
+
+
+
+total=128
+completed -- 28
+requested --98
+not completed=2
+
+
+select * from clientrequest where clientrequestid in (1273,1274)
+
+
+
+select * from userlogininfo where userid='0c6ff789-d879-4234-9d71-9d601b682a76'
+
+select * from Marketings  where marketersname like '%maria%'
+
+select * from client order by clientid desc
+
+98
+
+
+
+select count(cr.crnumber),cr.crnumber from ClientRequest cr inner join clientrequesttemp ctr
+on ctr.clientrequestid=cr.clientrequestid where ctr.marketersid=110
+and dateofvisit='2023-08-25' group by cr.crnumber having count(cr.crnumber)>1
+
+
+
+select cr.crnumber,cr.ClientRequestId from ClientRequest cr inner join clientrequesttemp ctr
+on ctr.clientrequestid=cr.clientrequestid where ctr.marketersid=110
+and dateofvisit='2023-08-25'  and cr.CRNumber in (
+'MKTCT00165',
+'MKTCT00166',
+'MKTCT00167',
+'MKTCT00168',
+'MKTCT00169',
+'MKTCT00170',
+'MKTCT00171',
+'MKTCT00172',
+'MKTCT00173',
+'MKTCT00174',
+'MKTCT00175',
+'MKTCT00176',
+'MKTCT00177',
+'MKTCT00178',
+'MKTCT00179',
+'MKTCT00180',
+'MKTCT00181',
+'MKTCT00182',
+'MKTCT00183',
+'MKTCT00184',
+'MKTCT00185',
+'MKTCT00186') and cr.Status='completed'
+
+
+select * from ClientLocationTracking where clientrequestid=1391
+
+
+
+and cr.status!='Requested'  and cr.status!='completed' group by cr.Clientrequestid
+
+
+order by cr.Clientrequestid desc
+
+select * from client where crnumber in 
+(
+'MKTCT00224',
+'MKTCA-SD00225',
+'MKTCT00226',
+'MKTCT00227',
+'MKTCT00228',
+'MKTCT00229',
+'MKTCT00230',
+'MKTCT00231',
+'MKTCT00232',
+'MKTCT00233',
+'MKTCT00234' )
+
+select * from ClientRequestTemp where clientrequestid in (
+1560)
+
+
+
+
